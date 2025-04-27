@@ -1,0 +1,410 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly; /* Alinea el logo y el menú */
+    align-items: center;
+    padding: 10px 20px;
+    
+    color: white;
+}
+
+/* Alinear el logo a la derecha */
+.logo {
+    margin-left: -90%; /* Empuja el logo hacia la derecha */
+}
+
+.logo img {
+    width: 50px; /* Ajusta el tamaño del logo */
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.persona-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin-bottom: 20px;
+    padding: 15px;
+    text-align: left;
+}
+
+.perfil {
+    position: relative;
+    text-align: center;
+}
+
+.portada {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.perfil-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid white;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.info {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.info h3 {
+    margin-bottom: 10px;
+}
+
+.redes a {
+    display: inline-block;
+    margin: 5px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contactar {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background: #25d366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contactar:hover {
+    background: #1ebe57;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background: #ff4b5c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background: #e0424e;
+}
+/*menu desplegable*/
+/* Contenedor general del menú */
+.menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+    backdrop-filter: blur(5px); /* Efecto difuminado */
+    z-index: 1000;
+}
+
+/* Contenedor del menú */
+.menu-dropdown {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Elementos del menú */
+.menu-dropdown li {
+    list-style: none;
+    margin: 15px 0;
+}
+
+.menu-dropdown li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.menu-dropdown li a:hover {
+    background: #444;
+    border-radius: 5px;
+}
+
+/* Icono del menú */
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    background: rgba(249, 249, 249, 0);
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 1100;
+}
+
+/* Mostrar menú */
+.menu-overlay.show {
+    display: block;
+}
+
+.menu-dropdown.show {
+    transform: translateX(0);
+}
+.cerrar-sesionlogo{
+    width: 15px;
+    
+}
+#corona{
+    width: 23px;
+    margin: 7px;
+    margin-left: -22px;
+    transform: rotate(30deg);
+}
+#verificado{
+  width:22px;
+
+  
+
+}
+
+css.
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly; /* Alinea el logo y el menú */
+    align-items: center;
+    padding: 10px 20px;
+    
+    color: white;
+}
+
+/* Alinear el logo a la derecha */
+.logo {
+    margin-left: -90%; /* Empuja el logo hacia la derecha */
+}
+
+.logo img {
+    width: 50px; /* Ajusta el tamaño del logo */
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.persona-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin-bottom: 20px;
+    padding: 15px;
+    text-align: left;
+}
+
+.perfil {
+    position: relative;
+    text-align: center;
+}
+
+.portada {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.perfil-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid white;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.info {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.info h3 {
+    margin-bottom: 10px;
+}
+
+.redes a {
+    display: inline-block;
+    margin: 5px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contactar {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background: #25d366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contactar:hover {
+    background: #1ebe57;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background: #ff4b5c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background: #e0424e;
+}
+/*menu desplegable*/
+/* Contenedor general del menú */
+.menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+    backdrop-filter: blur(5px); /* Efecto difuminado */
+    z-index: 1000;
+}
+
+/* Contenedor del menú */
+.menu-dropdown {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Elementos del menú */
+.menu-dropdown li {
+    list-style: none;
+    margin: 15px 0;
+}
+
+.menu-dropdown li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.menu-dropdown li a:hover {
+    background: #444;
+    border-radius: 5px;
+}
+
+/* Icono del menú */
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    background: rgba(249, 249, 249, 0);
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 1100;
+}
+
+/* Mostrar menú */
+.menu-overlay.show {
+    display: block;
+}
+
+.menu-dropdown.show {
+    transform: translateX(0);
+}
+.cerrar-sesionlogo{
+    width: 15px;
+    
+}
+#corona{
+    width: 23px;
+    margin: 7px;
+    margin-left: -22px;
+    transform: rotate(30deg);
+}
+#verificado{
+  width:22px;
+
+  

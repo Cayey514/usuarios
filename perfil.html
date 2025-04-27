@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información de Personas</title>
+    <link rel="stylesheet" href="./css/persona.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo">
+        </div>
+    
+        <!-- Icono de menú -->
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    
+        <!-- Fondo semitransparente -->
+        <div class="menu-overlay" id="menu-overlay" onclick="toggleMenu()">
+            <ul id="menu-dropdown" class="menu-dropdown">
+                <li><a href="/404/index.html">Pronto</a></li>
+                <li><a href="/404/index.html">Pronto</a></li>
+                <li><a href="/404/index.html">Pronto</a></li>
+                <li><a href="/404/index.html" onclick="cerrarSesion()">Cerrar Sesión <img class="cerrar-sesionlogo" src="img/cerrar-sesion.png" alt=""></a></li>
+            </ul>
+        </div>
+    </header>
+    
+
+    <div class="container">
+        <h2>꧁LOS MANCOS꧂</h2>
+        <div class="persona-card">
+            <div class="perfil">
+                <img src="img/7.jpg" class="portada" alt="Portada">
+                <img src="img/5.jpg" class="perfil-img" alt="Juan Pérez">
+            </div>
+            <div class="info">
+            
+
+                <h3>Darwin Romero (wincho)<img src="img/verificar.png" id="verificado" alt=""></h3>
+                <p><strong>Estudios:</strong> Ingeniero En Holgazanería Eficiente.</p>
+                <p><strong>Residencia:</strong> Bogotá, Colombia.</p>
+                <p><strong>Profesión:</strong> Tecnologo En Paja Recreativa.</p>
+                <div class="redes">
+                    <a href="https://www.facebook.com/darwinalonso.romeroguevara">Facebook</a>
+                    <a href="/404/index.html">Twitter</a>
+                    <a href="/404/index.html">Instagram</a>
+                </div>
+                <button class="contactar" onclick="contactarWhatsApp('573133869202 ', 'Darwin')">Contactar</button>
+            </div>
+        </div>
+
+        <div class="persona-card">
+            <div class="perfil">
+                <img src="img/8.jpg" class="portada" alt="Portada">
+                <img src="img/3.jpg" class="perfil-img" alt="María López">
+            </div>
+            <div class="info">
+          
+
+                <h3>Esteiber Cadena (la liendra)  <img src="img/verificar.png" id="verificado" alt=""></h3>
+                <p><strong>Estudios:</strong> Técnico En Dormir Sin Descanso.</p>
+                <p><strong>Residencia:</strong> Medellín, Colombia.</p>
+                <p><strong>Profesión:</strong> Magister En Paja A Dos Manos.</p>
+                <div class="redes">
+                    <a href="https://www.facebook.com/profile.php?id=100069413244075">Facebook</a>
+                    <a href="/404/index.html">Twitter</a>
+                    <a href="/404/index.html">Instagram</a>
+                </div>
+                <button class="contactar" onclick="contactarWhatsApp('573224295183', 'Esteiver')">Contactar</button>
+            </div>
+        </div>
+    </div>
+
+    
+
+   
+
+     <div class="container">
+        <h2>EL PRO <img src="img/corona.png" id="corona" alt=""></h2>
+        <div class="persona-card">
+            <div class="perfil">
+                <img src="img/7.jpg" class="portada" alt="Portada">
+                <img src="img/5.jpg" class="perfil-img" alt="Juan Pérez">
+            </div>
+            <div class="info">
+            
+
+                <h3>Andrey Aguilar (cayey)<img src="img/verificar.png" id="verificado" alt=""></h3>
+                <p><strong>Estudios:</strong> Técnico En Pereza Extrema</p>
+                <p><strong>Residencia:</strong> Bogotá, Colombia.</p>
+                <p><strong>Profesión:</strong> Técnico En Revision De Videos XXX.</p>
+                <div class="redes">
+                    <a href="https://www.facebook.com/profile.php?id=100071542810532">Facebook</a>
+                    <a href="/404/index.html">Twitter</a>
+                    <a href="/404/index.html">Instagram</a>
+                </div>
+                <button class="contactar" onclick="contactarWhatsApp('573223552494', 'cayey')">Contactar</button>
+            </div>
+        </div>
+
+       
+    </div>
+    
+    <script src="./js/personas.js"></script>
+</body>
+</html>
